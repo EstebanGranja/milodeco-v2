@@ -1,0 +1,427 @@
+{
+  "categorias": [
+    {
+      "id": "espejos",
+      "nombre": "Espejos",
+      "subtitulo": "reflejos tejidos a mano",
+      "descripcion": "Espejos redondos con marcos de hierro forjado y papel kraft tejido a mano. Cada uno tiene su personalidad: elegí el que mejor hable con tu casa.",
+      "portada": "/img/espejo_11.webp",
+      "portadaPosicion": "center 45%",
+      "productos": [
+        {
+          "slug": "espejo-trenza",
+          "nombre": "Espejo Trenza",
+          "descripcion": "Un diseño que enreda miradas. El círculo central de espejo está rodeado por un tejido trenzado de papel kraft que combina técnica y calidez.",
+          "imagenes": ["/img/espejo_31.webp", "/img/espejo_32.webp", "/img/espejo_33.webp"],
+          "opciones": [
+            { "nombre": "50cm diámetro · 20cm espejo", "precio": 47000 },
+            { "nombre": "60cm diámetro · 30cm espejo", "precio": 55000 },
+            { "nombre": "70cm diámetro · 40cm espejo", "precio": 61600 },
+            { "nombre": "75cm diámetro · 50cm espejo", "precio": 69900 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "espejo-patria",
+          "nombre": "Espejo Patria",
+          "descripcion": "Una pieza con carácter, como nuestras raíces. El espejo redondo se asoma desde lo alto y el papel kraft cae en forma de flecos artesanales, abrazando la mitad inferior.",
+          "imagenes": ["/img/espejo_41.webp", "/img/espejo_42.webp"],
+          "opciones": [
+            { "nombre": "60cm diámetro · 30cm espejo", "precio": 52900 },
+            { "nombre": "70cm diámetro · 40cm espejo", "precio": 59400 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "espejo-aura",
+          "nombre": "Espejo Aura",
+          "descripcion": "El centro de calma para cualquier espacio. Un espejo simple y delicado que parece flotar entre fibras tejidas con papel kraft.",
+          "imagenes": ["/img/espejo_21.webp", "/img/espejo_22.webp", "/img/espejo_23.webp"],
+          "opciones": [
+            { "nombre": "60cm diámetro · 30cm espejo", "precio": 52800 },
+            { "nombre": "70cm diámetro · 40cm espejo", "precio": 61600 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "espejo-girasol",
+          "nombre": "Espejo Girasol",
+          "descripcion": "Un diseño que irradia calidez y alegría. El Girasol combina un espejo circular con un marco de hierro forjado a mano que se despliega en forma de pétalos, creando un punto focal único que aporta elegancia y carácter artesanal a cualquier espacio.",
+          "imagenes": ["/img/espejo_61.webp", "/img/espejo_62.webp"],
+          "opciones": [
+            { "nombre": "60cm diámetro · 30cm espejo", "precio": 75000 },
+            { "nombre": "70cm diámetro · 40cm espejo", "precio": 85000 },
+            { "nombre": "75cm diámetro · 50cm espejo", "precio": 92000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "espejo-trenzado",
+          "nombre": "Espejo Trenzado",
+          "descripcion": "La elegancia en su expresión más pura. El Trenzado presenta un marco fino de hierro que rodea delicadamente el espejo, creando líneas sutiles y un estilo minimalista que dialoga con espacios contemporáneos.",
+          "imagenes": ["/img/espejo_51.webp"],
+          "opciones": [
+            { "nombre": "60cm diámetro · 30cm espejo", "precio": 56200 },
+            { "nombre": "70cm diámetro · 40cm espejo", "precio": 67000 },
+            { "nombre": "75cm diámetro · 50cm espejo", "precio": 72400 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "espejo-ojo-de-pez",
+          "nombre": "Espejo Ojo de Pez",
+          "descripcion": "Una mirada que refleja y atrapa. El Ojo de Pez combina un espejo circular con un marco de hierro forjado a mano, creando un punto focal único que aporta elegancia y carácter artesanal.",
+          "imagenes": ["/img/espejo_11.webp", "/img/espejo_12.webp", "/img/espejo_13.webp"],
+          "opciones": [
+            { "nombre": "60cm diámetro · 30cm espejo", "precio": 48600 },
+            { "nombre": "70cm diámetro · 40cm espejo", "precio": 54000 }
+          ],
+          "demora": "10 a 15 días"
+        }
+      ]
+    },
+    {
+      "id": "lamparas",
+      "nombre": "Lámparas",
+      "subtitulo": "luz cálida para tu casa",
+      "descripcion": "Lámparas colgantes y capelinas de hierro y papel kraft que llenan cada ambiente de una luz cálida y tranquila.",
+      "portada": "/img/lampara_31.webp",
+      "portadaPosicion": "center 55%",
+      "productos": [
+        {
+          "slug": "lampara-ambar",
+          "nombre": "Lámpara Ámbar",
+          "descripcion": "Sutil, recta, con presencia. La Ámbar combina hierro y papel kraft en una línea limpia que aporta calidez y carácter. Es ideal para colocar sobre una barra de cocina, iluminar un escritorio de estudio o acompañar una mesa de comedor larga.",
+          "imagenes": ["/img/lampara_31.webp", "/img/lampara_32.webp", "/img/lampara_33.webp"],
+          "opciones": [
+            { "nombre": "50cm diámetro", "precio": 51000 },
+            { "nombre": "60cm diámetro", "precio": 55000 },
+            { "nombre": "70cm diámetro", "precio": 57000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "lampara-pampa",
+          "nombre": "Lámpara Pampa",
+          "descripcion": "Luz cálida y forma suave. La Pampa se apoya en su estructura cónica para crear ambientes íntimos y acogedores. Su diseño funciona muy bien en rincones de lectura, dormitorios tranquilos o comedores donde los detalles artesanales son protagonistas.",
+          "imagenes": ["/img/lampara_21.webp", "/img/lampara_22.webp", "/img/lampara_23.webp"],
+          "opciones": [
+            { "nombre": "40 x 20 x 33cm", "precio": 57200 },
+            { "nombre": "50 x 30 x 33cm", "precio": 60500 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "lampara-geo",
+          "nombre": "Lámpara Geo",
+          "descripcion": "Una lámpara de líneas geométricas y diseño artesanal. Su forma cilíndrica se complementa con un tejido interno en forma de cono, creando un juego de texturas y luz cálida ideal para ambientes modernos o espacios que buscan un toque distintivo.",
+          "imagenes": ["/img/lampara_61.webp", "/img/lampara_62.webp", "/videos/lampara_63.mp4"],
+          "opciones": [
+            { "nombre": "50cm diámetro · 23cm alto", "precio": 63000 },
+            { "nombre": "60cm diámetro · 23cm alto", "precio": 73000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "capelina-rio",
+          "nombre": "Capelina Río",
+          "descripcion": "El movimiento hecho luz. La Río tiene una forma ondulada que da textura, suavidad y dinamismo a cualquier ambiente. Su estilo orgánico resalta en livings serenos, estudios creativos o espacios de descanso y meditación.",
+          "imagenes": ["/img/lampara_41.webp", "/img/lampara_42.webp", "/img/lampara_43.webp"],
+          "opciones": [
+            { "nombre": "50cm diámetro", "precio": 51000 },
+            { "nombre": "60cm diámetro", "precio": 55000 },
+            { "nombre": "70cm diámetro", "precio": 57000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "lampara-elina",
+          "nombre": "Lámpara Elina",
+          "descripcion": "Luz ambiental con estilo artesanal. La lámpara Elina combina una estructura de hierro forjado con una pantalla de papel kraft tejida a mano. Ideal para iluminar rincones de lectura, salas de estar o dormitorios, aportando calidez y un toque rústico.",
+          "imagenes": ["/img/lampara_51.webp", "/img/lampara_52.webp", "/img/lampara_53.webp"],
+          "opciones": [
+            { "nombre": "50cm diámetro · 35cm alto", "precio": 81000 },
+            { "nombre": "60cm diámetro · 40cm alto", "precio": 91800 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "lampara-rodeo",
+          "nombre": "Lámpara Rodeo",
+          "descripcion": "Fuerza y carácter desde lo alto. La Rodeo es una lámpara colgante de hierro con acabado industrial que ilumina con personalidad. Perfecta para comedores, cocinas rústicas o espacios que celebran lo artesanal.",
+          "imagenes": ["/img/lampara_11.webp", "/img/lampara_12.webp"],
+          "opciones": [
+            { "nombre": "40cm diámetro · 26cm alto", "precio": 49700 },
+            { "nombre": "50cm diámetro · 26cm alto", "precio": 55100 }
+          ],
+          "demora": "10 a 15 días"
+        }
+      ]
+    },
+    {
+      "id": "deco",
+      "nombre": "Deco",
+      "subtitulo": "cositas para tu casa",
+      "descripcion": "Acá están las cositas para la casa que tejo a mano sobre estructuras de hierro: bandejas, canastos, percheros, bodegas y mis nuevos arbolitos de Navidad.",
+      "portada": "/img/deco_21.webp",
+      "portadaPosicion": "center 62%",
+      "nota": "¡hay Navidad!",
+      "productos": [
+        {
+          "slug": "arbolitos-de-navidad",
+          "nombre": "Arbolitos de Navidad",
+          "nota": "¡nuevos!",
+          "notaGaleria": "¡los más pedidos!",
+          "frase": "¡recién salidos del taller!",
+          "descripcion": "¡Los más pedidos de cada Navidad! Arbolitos tejidos a mano en papel kraft sobre estructura de hierro, con ese toque cálido y natural que transforma cualquier rincón. Elegí tu favorito o combiná varios y armá tu propio bosquecito navideño.",
+          "imagenes": ["/img/deco_21.webp", "/img/deco_22.webp", "/img/deco_23.webp", "/img/deco_24.webp", "/img/deco_25.webp", "/img/deco_26.webp"],
+          "tituloOpciones": "Opciones",
+          "opciones": [
+            { "nombre": "Opción 1", "detalle": "Chico · 30 cm", "etiqueta": "Opción 1 (chico)", "imagen": "/img/deco_22.webp", "precio": 40000 },
+            { "nombre": "Opción 2", "detalle": "Chico · 30 cm", "etiqueta": "Opción 2 (chico)", "imagen": "/img/deco_23.webp", "precio": 40000 },
+            { "nombre": "Opción 3", "detalle": "Chico · 30 cm", "etiqueta": "Opción 3 (chico)", "imagen": "/img/deco_24.webp", "precio": 40000 },
+            { "nombre": "Opción 4", "detalle": "Grande · 45 cm", "etiqueta": "Opción 4 (grande)", "imagen": "/img/deco_25.webp", "precio": 59000 },
+            { "nombre": "Opción 5", "detalle": "Grande · 68 cm", "etiqueta": "Opción 5 (grande)", "imagen": "/img/deco_26.webp", "precio": 59000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "mesa-nordica",
+          "nombre": "Mesa Nórdica",
+          "descripcion": "Geometría y calidez en equilibrio perfecto. La Mesa Nórdica es una pieza de hierro forjado a mano que combina líneas limpias con textura artesanal. Funciona como mesa auxiliar, soporte para plantas o punto focal decorativo.",
+          "imagenes": ["/img/deco_11.webp", "/img/deco_12.webp", "/img/deco_13.webp", "/img/deco_14.webp"],
+          "opciones": [
+            { "nombre": "50cm diámetro · 30cm espejo", "precio": 79900 },
+            { "nombre": "60cm diámetro · 40cm espejo", "precio": 87500 },
+            { "nombre": "Conjunto: una de cada medida", "precio": 150000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "bodega-artesanal",
+          "nombre": "Bodega artesanal",
+          "descripcion": "Bodeguita artesanal para 4 botellas, ideal para regalar o lucir en tu hogar. Hecha a mano, resistente y con un diseño rústico que queda bien en cualquier ambiente.",
+          "imagenes": ["/img/deco_71.webp", "/img/deco_72.webp", "/img/deco_73.webp"],
+          "opciones": [
+            { "nombre": "23cm diámetro · 18cm profundidad", "precio": 55000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "canasto-multiuso-ambar",
+          "nombre": "Canasto Multiuso Ámbar",
+          "descripcion": "Orden con estilo artesanal. El Canasto Ámbar es una pieza de hierro forjado a mano que combina funcionalidad y belleza. Resistente pero liviano, se adapta a cualquier ambiente sin perder presencia decorativa.",
+          "imagenes": ["/img/deco_31.webp", "/img/deco_32.webp", "/img/deco_33.webp", "/img/deco_34.webp"],
+          "opciones": [
+            { "nombre": "25cm diámetro · 10cm alto", "precio": 37800 },
+            { "nombre": "35cm diámetro · 10cm alto", "precio": 45000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "bandeja",
+          "nombre": "Bandeja",
+          "descripcion": "Bandejas artesanales de hierro forjado, súper prácticas y decorativas. Vienen en tamaño rectangular y redondas con espejo en el centro. Ideales para servir, organizar o decorar cualquier espacio de tu hogar.",
+          "imagenes": ["/img/deco_91.webp", "/img/deco_92.webp", "/img/deco_93.webp", "/img/deco_94.webp"],
+          "opciones": [
+            { "nombre": "Rectangular 40 x 30cm · 5cm alto", "precio": 50000 },
+            { "nombre": "Rectangular 35 x 25cm · 10cm alto", "precio": 50000 },
+            { "nombre": "Redonda 50cm diámetro · 30cm espejo", "precio": 65000 },
+            { "nombre": "Redonda 60cm diámetro · 40cm espejo", "precio": 70000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "portaplatos",
+          "nombre": "Portaplatos",
+          "descripcion": "Un clásico para la cocina o el comedor. El portaplatos artesanal de hierro forjado es resistente y práctico, ideal para organizar tus platos y mantenerlos siempre a mano. Su diseño simple y funcional suma un toque decorativo a cualquier ambiente.",
+          "imagenes": ["/img/deco_81.webp", "/img/deco_82.webp", "/img/deco_83.webp", "/img/deco_84.webp"],
+          "opciones": [
+            { "nombre": "30cm ancho · 40cm alto · 20cm profundidad", "precio": 32000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "matera",
+          "nombre": "Matera",
+          "descripcion": "Esta matera clásica de hierro forjado a mano combina tradición y funcionalidad. Liviana pero resistente.",
+          "imagenes": ["/img/deco_41.webp"],
+          "opciones": [
+            { "nombre": "20cm alto · 23cm ancho", "precio": 62000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "portamaceta-en-altura",
+          "nombre": "Portamaceta en altura",
+          "nota": "¡a tu medida!",
+          "descripcion": "Macetera de hierro forjado a mano. Las medidas son personalizables a tu gusto. Diseño elegante para organizar tus plantas, flores o utensilios. ¡Ideal para interiores y exteriores!",
+          "imagenes": ["/img/deco_51.webp", "/img/deco_52.webp"],
+          "opciones": [
+            { "nombre": "Canasto 25cm diámetro · 20cm alto / Pie 55cm alto", "precio": 60000 },
+            { "nombre": "Canasto 25cm diámetro · 20cm alto / Pie 60cm alto", "precio": 61000 },
+            { "nombre": "Canasto 25cm diámetro · 20cm alto / Pie 70cm alto", "precio": 62000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "perchero-amanecer",
+          "nombre": "Perchero Amanecer",
+          "descripcion": "Perchero artesanal con diseño de sol naciente, tejido a mano. Una pieza funcional y decorativa que llena de calidez la entrada de tu hogar.",
+          "imagenes": ["/img/deco_101.jpeg", "/img/deco_102.jpeg"],
+          "opciones": [
+            { "nombre": "40cm ancho", "precio": 37000 },
+            { "nombre": "50cm ancho", "precio": 37000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "servilletero",
+          "nombre": "Servilletero",
+          "descripcion": "Servilletero artesanal tejido a mano. Práctico y con estilo, es el detalle perfecto para tu mesa o para regalar.",
+          "imagenes": ["/img/deco_111.jpeg"],
+          "opciones": [
+            { "nombre": "18cm", "precio": 32000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "totem",
+          "nombre": "Tótem",
+          "descripcion": "Tótems decorativos artesanales, tejidos a mano. Piezas con presencia que suman textura y calidez a estantes, mesas o rincones. Llevalos solos, en dúo o en combo con la Hoja perchero y el Servilletero.",
+          "imagenes": ["/img/deco_121.jpeg", "/img/deco_122.jpeg"],
+          "opciones": [
+            { "nombre": "35cm alto", "precio": 33500 },
+            { "nombre": "30cm alto", "precio": 32000 },
+            { "nombre": "Dúo (35cm + 30cm)", "precio": 48000 },
+            { "nombre": "Combo: Hoja perchero + Servilletero + Dúo Tótem", "precio": 90000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "hoja-perchero",
+          "nombre": "Hoja perchero",
+          "descripcion": "Perchero artesanal con forma de hoja, tejido a mano. Un diseño original que combina naturaleza y funcionalidad para vestir tus paredes.",
+          "imagenes": ["/img/deco_131.jpeg", "/img/deco_132.jpeg", "/img/deco_133.jpeg"],
+          "opciones": [
+            { "nombre": "60cm alto", "precio": 36000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "portamaceta-de-piso",
+          "nombre": "Portamaceta de piso",
+          "descripcion": "Portamaceta de hierro forjado a mano. Diseño elegante y funcional para organizar tus plantas. Ideal para cualquier ambiente.",
+          "imagenes": ["/img/deco_61.webp", "/img/deco_62.webp"],
+          "opciones": [
+            { "nombre": "45cm diámetro · 40cm alto", "precio": 86400 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "bodega-cuadrada",
+          "nombre": "Bodega cuadrada",
+          "descripcion": "Bodeguita cuadrada artesanal para 9 botellas, tejida a mano con estructura de hierro. Un diseño moderno y resistente, ideal para organizar y lucir tus vinos en cualquier ambiente.",
+          "imagenes": ["/img/deco_141.jpeg", "/img/deco_142.jpeg"],
+          "opciones": [
+            { "nombre": "30 x 30cm", "precio": 68000 }
+          ],
+          "demora": "10 a 15 días"
+        }
+      ]
+    },
+    {
+      "id": "bancos",
+      "nombre": "Bancos",
+      "subtitulo": "para sentarse y apoyar",
+      "descripcion": "Banquitos y pies de cama de madera de pino y de hierro forjado, firmes y hechos a mano.",
+      "portada": "/img/banco_21.jpeg",
+      "portadaPosicion": "center 62%",
+      "productos": [
+        {
+          "slug": "banquito-de-madera-de-pino",
+          "nombre": "Banquito de madera de pino",
+          "descripcion": "Banquito artesanal de madera de pino, resistente y versátil. Ideal como asiento extra, mesita auxiliar o apoyo decorativo en cualquier rincón de tu hogar.",
+          "imagenes": ["/img/banco_11.jpeg"],
+          "opciones": [
+            { "nombre": "35cm ancho · 45cm alto", "precio": 65000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "banquito-de-hierro",
+          "nombre": "Banquito de hierro",
+          "descripcion": "Banquito de hierro forjado a mano, firme y con carácter. Su diseño simple combina con cualquier ambiente y aporta ese toque artesanal que distingue a cada pieza.",
+          "imagenes": ["/img/banco_31.jpeg"],
+          "opciones": [
+            { "nombre": "40cm ancho · 40cm alto", "precio": 75000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "pie-de-cama-de-pino",
+          "nombre": "Pie de cama de pino",
+          "descripcion": "Pie de cama de madera de pino, práctico y decorativo. Perfecto para apoyar mantas, almohadones o simplemente sumar calidez al dormitorio. Disponible con o sin parrilla.",
+          "imagenes": ["/img/banco_21.jpeg"],
+          "opciones": [
+            { "nombre": "1m largo · 45cm alto · con parrilla", "precio": 140000 },
+            { "nombre": "1m largo · 45cm alto · sin parrilla", "precio": 130000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "pie-de-cama-de-hierro",
+          "nombre": "Pie de cama de hierro",
+          "descripcion": "Pie de cama de hierro forjado a mano, elegante y resistente. Una pieza que combina funcionalidad y diseño artesanal para completar tu dormitorio.",
+          "imagenes": ["/img/banco_41.jpeg", "/img/banco_42.jpeg"],
+          "opciones": [
+            { "nombre": "40cm ancho · 80cm largo", "precio": 140000 }
+          ],
+          "demora": "10 a 15 días"
+        }
+      ]
+    },
+    {
+      "id": "insumos",
+      "nombre": "Insumos",
+      "subtitulo": "para que tejas vos",
+      "descripcion": "Papel kraft y estructuras de hierro para que armes tus propias piezas. Son los mismos materiales que uso yo en el taller.",
+      "portada": "/img/insumo_portada.webp",
+      "portadaPosicion": "center 40%",
+      "cantidadTexto": "para tejer vos",
+      "productos": [
+        {
+          "slug": "papel-kraft",
+          "nombre": "Papel Kraft",
+          "descripcion": "Papel kraft de alta calidad, ideal para tejidos artesanales. Disponible en dos colores y diferentes grosores. Venta por metros, mínimo 50 m.",
+          "imagenes": ["/img/insumo_11.webp"],
+          "venta": { "unidad": "m", "minimo": 50, "incremento": 50, "inicial": 100, "precioCada": 100 },
+          "colores": [
+            {
+              "nombre": "Marrón",
+              "grosores": [
+                { "nombre": "2mm", "precio": 5400 },
+                { "nombre": "4mm", "precio": 6500, "inicial": true }
+              ]
+            },
+            {
+              "nombre": "Negro",
+              "grosores": [
+                { "nombre": "4mm", "precio": 6500 }
+              ]
+            }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "estructuras-de-hierro",
+          "nombre": "Estructuras de hierro",
+          "descripcion": "La base de tu próxima creación. Estructuras de hierro forjado a mano, diseñadas para convertirse en lo que vos imagines: lámparas, espejos, maceteros o lo que decidas. Se realizan por encargo, listas para tejer o intervenir.",
+          "imagenes": ["/img/insumo_21.webp", "/img/insumo_22.webp", "/img/insumo_23.webp", "/img/insumo_24.webp"],
+          "opciones": [],
+          "demora": "10 a 15 días"
+        }
+      ]
+    }
+  ]
+}

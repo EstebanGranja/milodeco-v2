@@ -1,0 +1,79 @@
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 48px 28px;
+}
+
+.tarjeta { display: flex; flex-direction: column; min-width: 0; color: var(--tinta); text-decoration: none; }
+.tarjeta:hover { color: var(--tinta); }
+
+.tarjeta-foto {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--arena);
+}
+.tarjeta-foto img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--curva); }
+
+.tarjeta-ver {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  height: 46px;
+  border-radius: 999px;
+  background: rgba(43, 33, 26, 0.88);
+  color: var(--crema);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+@media (hover: hover) {
+  .tarjeta:hover .tarjeta-foto img { transform: scale(1.05); }
+  .tarjeta:hover .tarjeta-ver { opacity: 1; transform: none; }
+}
+.tarjeta:focus-visible .tarjeta-ver { opacity: 1; transform: none; }
+
+.tarjeta-nombre { font-family: var(--f-titulo); font-weight: 400; font-size: 23px; line-height: 1.15; margin-top: 18px; }
+.tarjeta-resumen {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--texto-suave);
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tarjeta-pie {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(58, 43, 32, 0.25);
+}
+.tarjeta-precio { font-size: 21px; font-weight: 600; color: var(--acento); white-space: nowrap; }
+.tarjeta-desde { font-size: 13px; font-weight: 400; color: var(--marron); margin-right: 6px; }
+.tarjeta-detalle { font-size: 13px; color: var(--marron); text-align: right; }
+
+@media (max-width: 760px) {
+  .grilla-productos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
+  .tarjeta-foto { border-radius: 16px; }
+  .tarjeta-foto .cinta { left: 8px; top: 10px; padding: 3px 10px 3px 20px; font-size: 19px; clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0 50%); }
+  .tarjeta-ver { display: none; }
+  .tarjeta-nombre { font-size: 18px; margin-top: 11px; }
+  .tarjeta-resumen { display: none; }
+  .tarjeta-pie { flex-direction: column-reverse; align-items: flex-start; gap: 3px; margin-top: 4px; padding-top: 0; border-top: none; }
+  .tarjeta-precio { font-size: 16.5px; }
+  .tarjeta-desde { font-size: 12px; margin-right: 4px; }
+  .tarjeta-detalle { font-size: 12px; text-align: left; }
+}

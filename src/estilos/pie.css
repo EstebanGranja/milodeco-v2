@@ -1,0 +1,48 @@
+.pie { background: var(--tinta); color: var(--dorado-claro); }
+.pie a { color: var(--dorado-claro); text-decoration: none; }
+.pie a:hover { color: var(--papel); text-decoration: underline; text-underline-offset: 4px; }
+
+.pie-columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  padding-top: 72px;
+}
+.pie-saludo { display: flex; flex-direction: column; gap: 14px; }
+.pie-saludo p:not([class]) { font-size: 15px; line-height: 1.65; color: rgba(239, 228, 210, 0.75); max-width: 280px; }
+.pie-gracias {
+  font-family: var(--f-mano);
+  font-size: 40px;
+  line-height: 1;
+  color: var(--dorado);
+  transform: rotate(-3deg);
+  transform-origin: left;
+}
+.pie-firma { font-family: var(--f-mano); font-size: 28px; color: var(--crema); }
+
+.pie-lista { display: flex; flex-direction: column; gap: 12px; font-size: 15px; }
+.pie-titulo { font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dorado); margin-bottom: 4px; }
+
+.pie-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; font-size: 14px; color: rgba(239, 228, 210, 0.7); }
+.pie-logo img { width: 84px; height: 84px; border-radius: 18px; object-fit: cover; transform: rotate(4deg); }
+
+.pie-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 56px;
+  padding-block: 22px 28px;
+  border-top: 1px dashed rgba(239, 228, 210, 0.22);
+  font-size: 13px;
+  color: rgba(239, 228, 210, 0.6);
+}
+
+@media (max-width: 760px) {
+  .pie-columnas { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
+  .pie-gracias { font-size: 36px; }
+  .pie-lista { gap: 0; }
+  .pie-lista a { padding: 10px 0; }
+  .pie-logo { display: none; }
+  .pie-legal { margin-top: 28px; padding-block: 16px 32px; font-size: 12px; }
+}

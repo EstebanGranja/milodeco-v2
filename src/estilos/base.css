@@ -1,0 +1,344 @@
+/* Paleta y tipografías de Milodeco: crema, kraft y marrones de madera */
+:root {
+  --crema: #F6F0E6;
+  --papel: #FFFCF7;
+  --arena: #EFE6D8;
+  --arena-oscura: #E3D6C2;
+  --kraft: #E7D5B8;
+  --cinta: #C9A27A;
+  --dorado: #E6C99F;
+  --dorado-claro: #EFE4D2;
+  --tinta: #2B211A;
+  --madera: #3A2B20;
+  --texto: #4A3A2E;
+  --texto-suave: #5E4D3F;
+  --marron: #6E5232;
+  --acento: #8A6A47;
+  --verde: #4E6B43;
+  --linea: rgba(58, 43, 32, 0.28);
+  --linea-suave: rgba(58, 43, 32, 0.12);
+  --borde-boton: rgba(43, 33, 26, 0.22);
+  --sombra-papel: 0 16px 34px -20px rgba(43, 33, 26, 0.5);
+
+  --f-titulo: 'Fraunces', Georgia, serif;
+  --f-texto: 'Jost', system-ui, sans-serif;
+  --f-mano: 'Caveat', cursive;
+
+  --ancho: 1240px;
+  --margen: clamp(16px, 4vw, 40px);
+  --curva: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --alto-encabezado: 77px;
+
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;
+  scroll-padding-top: calc(var(--alto-encabezado) + 16px);
+}
+
+/* Con un modal abierto, la página de fondo no se mueve */
+html:has(dialog[open]) { overflow: hidden; }
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: var(--f-texto);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, video, svg { display: block; max-width: 100%; }
+img, video { height: auto; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: var(--marron); }
+a:hover { color: var(--tinta); }
+h1, h2, h3, p, figure { margin: 0; }
+
+:focus-visible { outline: 2px solid var(--tinta); outline-offset: 3px; border-radius: 4px; }
+
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho);
+  margin-inline: auto;
+  padding-inline: var(--margen);
+}
+
+@media (max-width: 760px) { .solo-escritorio { display: none !important; } }
+@media (min-width: 761px) { .solo-movil { display: none !important; } }
+
+/* ---------- Títulos y letra a mano ---------- */
+
+.titulo-seccion {
+  font-family: var(--f-titulo);
+  font-weight: 300;
+  font-size: clamp(34px, 3.8vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.titulo-seccion em { font-style: italic; color: var(--acento); }
+
+.seccion-nota {
+  font-family: var(--f-mano);
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--acento);
+  margin-top: 8px;
+  transform: rotate(-1.5deg);
+  transform-origin: left;
+}
+
+.saludo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--f-mano);
+  font-size: 29px;
+  line-height: 1.2;
+  color: var(--acento);
+  transform: rotate(-3deg);
+  transform-origin: left;
+}
+
+.firma {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-family: var(--f-mano);
+  font-size: 28px;
+  color: var(--tinta);
+  transform: rotate(-2deg);
+  transform-origin: left;
+}
+.firma svg { color: var(--acento); }
+.firma-grande { font-size: 34px; margin-top: 30px; transform: none; }
+
+.link-subrayado {
+  position: relative;
+  color: var(--tinta);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-decoration: none;
+}
+.link-subrayado::after,
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 2px;
+  height: 1.5px;
+  background: currentColor;
+  transition: right 0.3s ease;
+}
+.link-subrayado:hover::after { right: 0; }
+
+/* ---------- Botones ---------- */
+
+.boton {
+  height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  border: none;
+  background: var(--tinta);
+  color: var(--crema);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.boton:hover { color: var(--crema); }
+.boton-borde { background: transparent; color: var(--tinta); border: 1px solid rgba(43, 33, 26, 0.35); }
+.boton-borde:hover { color: var(--tinta); }
+.boton-claro { background: var(--crema); color: var(--tinta); }
+.boton-claro:hover { color: var(--tinta); }
+.boton-mediano { height: 48px; padding: 0 22px; }
+.boton-ancho { width: 100%; }
+
+.boton-redondo {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid rgba(58, 43, 32, 0.2);
+  background: transparent;
+  color: var(--madera);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.boton-redondo-grande { width: 52px; height: 52px; border-color: rgba(43, 33, 26, 0.3); color: var(--tinta); }
+
+@media (hover: hover) {
+  .boton:hover, .boton-redondo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -12px rgba(43, 33, 26, 0.55);
+  }
+}
+
+/* Pastillas: menú del celular, categorías y opciones de color/grosor */
+.pastilla {
+  height: 44px;
+  padding: 0 18px;
+  flex: none;
+  border-radius: 999px;
+  border: 1px solid var(--borde-boton);
+  background: transparent;
+  color: var(--tinta);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.pastilla:hover { border-color: var(--tinta); color: var(--tinta); }
+.pastilla[aria-current='page'],
+.pastilla[aria-pressed='true'] { background: var(--tinta); border-color: var(--tinta); color: var(--crema); }
+.pastilla-cantidad { opacity: 0.6; }
+
+/* Selector de cantidad: −  1  + */
+.cantidad {
+  height: 56px;
+  border-radius: 999px;
+  border: 1px solid var(--borde-boton);
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  flex: none;
+}
+.cantidad button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--tinta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cantidad button:disabled { opacity: 0.3; cursor: default; }
+.cantidad > span { min-width: 34px; text-align: center; font-size: 17px; font-weight: 600; white-space: nowrap; }
+.cantidad-chica { height: 40px; padding: 0 2px; }
+.cantidad-chica button { width: 36px; height: 36px; }
+.cantidad-chica > span { min-width: 28px; font-size: 15px; }
+
+/* ---------- Detalles de papelería: cinta, washi, polaroid, nota ---------- */
+
+/* Cartelito con punta, escrito a mano */
+.cinta {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  z-index: 1;
+  padding: 6px 14px 6px 26px;
+  background: var(--cinta);
+  color: var(--tinta);
+  font-family: var(--f-mano);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  clip-path: polygon(12px 0, 100% 0, 100% 100%, 12px 100%, 0 50%);
+  transform: rotate(-4deg);
+}
+
+/* Cinta de papel (washi) pegando fotos y notas */
+.washi {
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 28px;
+  background: repeating-linear-gradient(45deg, rgba(201, 162, 122, 0.8) 0 8px, rgba(222, 196, 160, 0.8) 8px 16px);
+  pointer-events: none;
+}
+.washi-blanca {
+  width: 96px;
+  height: 26px;
+  background: repeating-linear-gradient(45deg, rgba(255, 252, 247, 0.75) 0 8px, rgba(246, 240, 230, 0.45) 8px 16px);
+}
+
+.polaroid {
+  position: relative;
+  display: block;
+  background: var(--papel);
+  padding: 14px 14px 56px;
+  box-shadow: 0 24px 50px -22px rgba(43, 33, 26, 0.55);
+  transition: transform 0.4s var(--curva);
+}
+.polaroid-washi { left: 50%; top: -14px; margin-left: -54px; width: 108px; height: 30px; transform: rotate(3deg); }
+.polaroid-foto { display: block; aspect-ratio: 1; overflow: hidden; background: var(--arena); }
+.polaroid-foto img, .polaroid-foto video { width: 100%; height: 100%; object-fit: cover; }
+.polaroid-epigrafe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  text-align: center;
+  font-family: var(--f-mano);
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--texto);
+}
+@media (hover: hover) { .polaroid:hover { transform: rotate(0deg) scale(1.02) !important; } }
+
+/* Notita de papel kraft */
+.nota-papel {
+  position: relative;
+  background: var(--kraft);
+  padding: 26px 28px 28px;
+  transform: rotate(-1deg);
+  box-shadow: var(--sombra-papel);
+}
+.nota-papel .washi-blanca { right: 26px; top: -12px; transform: rotate(6deg); }
+.nota-papel-titulo { font-family: var(--f-mano); font-size: 32px; line-height: 1.1; color: var(--tinta); }
+.nota-papel p:not(.nota-papel-titulo) { font-size: 15.5px; line-height: 1.7; color: var(--texto); margin-top: 10px; }
+.nota-papel .boton { margin-top: 18px; }
+
+/* Línea cosida entre secciones */
+.puntada { width: 100%; height: 14px; color: rgba(138, 106, 71, 0.55); }
+
+/* Burbuja con la cantidad del carrito */
+.burbuja {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--dorado);
+  color: var(--tinta);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burbuja[hidden] { display: none; }
+
+/* ---------- Página no encontrada ---------- */
+
+.no-encontrada { padding-block: 96px 120px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.no-encontrada p:not(.saludo) { font-size: 17px; line-height: 1.7; color: var(--texto-suave); max-width: 480px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,23 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Todas las rutas (/deco, /deco/arbolitos-de-navidad...) las resuelve la app
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Fotos y videos: cache largo en el navegador
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

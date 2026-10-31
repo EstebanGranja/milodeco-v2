@@ -1,0 +1,105 @@
+.anuncio {
+  display: block;
+  background: var(--madera);
+  color: var(--dorado-claro);
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.anuncio:hover { color: var(--papel); }
+.anuncio-mano { font-family: var(--f-mano); font-size: 21px; color: var(--dorado); margin-right: 8px; }
+.anuncio-accion { font-weight: 500; text-decoration: underline; text-underline-offset: 4px; white-space: nowrap; }
+
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(246, 240, 230, 0.94);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px dashed var(--linea);
+}
+
+.encabezado-contenido {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-block: 14px;
+}
+
+.marca { display: flex; align-items: center; gap: 12px; text-decoration: none; flex: none; }
+.marca img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; transform: rotate(-3deg); }
+.marca-texto { display: flex; flex-direction: column; line-height: 1; }
+.marca-nombre { font-family: var(--f-titulo); font-size: 27px; color: var(--tinta); letter-spacing: 0.01em; }
+.marca-firma {
+  font-family: var(--f-mano);
+  font-size: 19px;
+  color: var(--acento);
+  margin-top: 2px;
+  transform: rotate(-2deg);
+  transform-origin: left;
+}
+
+.menu-principal { display: flex; gap: 26px; margin: 0 auto; font-size: 15px; font-weight: 500; }
+.menu-link { position: relative; color: var(--texto); padding: 8px 0; text-decoration: none; white-space: nowrap; }
+.menu-link:hover::after, .menu-link[aria-current='page']::after { right: 0; }
+.menu-link[aria-current='page'] { color: var(--tinta); font-weight: 600; }
+.menu-link[aria-current='page']::after { height: 2px; }
+
+.encabezado-acciones { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+
+.boton-carrito {
+  position: relative;
+  height: 44px;
+  padding: 0 18px 0 16px;
+  border-radius: 999px;
+  border: none;
+  background: var(--tinta);
+  color: var(--crema);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  flex: none;
+}
+.boton-carrito.salta { animation: salto 0.5s var(--curva); }
+@keyframes salto {
+  40% { transform: scale(1.12) rotate(-4deg); }
+  100% { transform: none; }
+}
+
+/* Menú deslizable del celular, con la página actual marcada */
+.menu-movil {
+  display: none;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px var(--margen);
+  border-bottom: 1px dashed var(--linea);
+  scrollbar-width: none;
+}
+.menu-movil::-webkit-scrollbar { display: none; }
+
+@media (max-width: 1080px) {
+  .menu-principal { display: none; }
+  .menu-movil { display: flex; }
+}
+
+@media (max-width: 760px) {
+  :root { --alto-encabezado: 64px; }
+  .anuncio { padding: 7px 14px; }
+  .anuncio-mano { font-size: 20px; }
+  .encabezado-contenido { padding-block: 10px; gap: 12px; }
+  .marca { gap: 10px; }
+  .marca img { width: 42px; height: 42px; border-radius: 11px; }
+  .marca-nombre { font-size: 23px; }
+  .marca-firma { font-size: 17px; margin-top: 1px; transform: none; }
+  .encabezado-acciones { gap: 8px; }
+  .boton-carrito { width: 44px; padding: 0; justify-content: center; }
+  .boton-carrito-texto { display: none; }
+  .boton-carrito .burbuja { position: absolute; top: -3px; right: -3px; min-width: 19px; height: 19px; padding: 0 5px; font-size: 11px; }
+  .menu-movil { padding-block: 10px; }
+}
