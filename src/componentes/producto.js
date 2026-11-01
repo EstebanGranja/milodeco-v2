@@ -79,8 +79,7 @@ function plantilla(categoria, producto) {
   const medios = producto.imagenes;
   const variasFotos = medios.length > 1;
   const conEtiquetas = producto.opciones?.some((o) => o.imagen);
-  const notaGaleria = producto.notaGaleria || producto.nota;
-  const consulta = linkWhatsApp(`¡Hola Silvana! Te quiero consultar por ${producto.nombre}, que vi en la página.`);
+  const consulta = linkWhatsApp(`Hola Silvana, te consulto por ${producto.nombre}.`);
 
   return `
     <div class="producto-caja">
@@ -97,7 +96,7 @@ function plantilla(categoria, producto) {
           ${medios.map((src, i) => esVideo(src)
             ? `<video class="galeria-medio" src="${src}" muted loop playsinline preload="metadata" aria-label="Video de ${producto.nombre}"></video>`
             : `<img class="galeria-medio" src="${src}" alt="${producto.nombre}, foto ${i + 1}" ${i ? 'loading="lazy"' : ''}>`).join('')}
-          ${notaGaleria ? `<span class="cinta galeria-cinta">${notaGaleria}</span>` : ''}
+          ${producto.nota ? `<span class="cinta galeria-cinta">${producto.nota}</span>` : ''}
           ${variasFotos ? `
             <span class="galeria-contador" aria-live="polite"></span>
             <button class="galeria-flecha galeria-anterior" type="button" data-accion="anterior" aria-label="Foto anterior">${iconos.izquierda({ grosor: 1.8 })}</button>
@@ -114,10 +113,7 @@ function plantilla(categoria, producto) {
       </div>
 
       <div class="producto-info">
-        <div class="producto-sobre">
-          <span class="producto-categoria">${categoria.nombre}</span>
-          ${producto.frase ? `<span class="producto-frase">${producto.frase}</span>` : ''}
-        </div>
+        <p class="antetitulo">${categoria.nombre}</p>
         <h2 id="producto-titulo" class="producto-nombre" tabindex="-1">${producto.nombre}</h2>
         <div class="producto-precio">
           <span class="producto-precio-valor" data-precio></span>
@@ -137,19 +133,18 @@ function plantilla(categoria, producto) {
             </div>
             <button class="boton boton-agregar solo-escritorio" type="button" data-accion="agregar"></button>
           </div>
-          <a class="boton boton-borde boton-ancho solo-escritorio" href="${consulta}" target="_blank" rel="noopener">${iconos.whatsapp()} Preguntame por WhatsApp</a>
+          <a class="boton boton-borde boton-ancho solo-escritorio" href="${consulta}" target="_blank" rel="noopener">${iconos.whatsapp()} Consultar por WhatsApp</a>
         </div>
 
         <ul class="producto-datos">
-          ${producto.demora ? `<li>${iconos.reloj({ grosor: 1.5 })} Te lo tengo listo en ${producto.demora}</li>` : ''}
-          <li>${iconos.tejido({ grosor: 1.5 })} Lo tejo yo, a mano, en mi taller</li>
-          <li>${iconos.whatsapp({ grosor: 1.5 })} El pago y la entrega los charlamos por WhatsApp</li>
+          ${producto.demora ? `<li>${iconos.reloj({ grosor: 1.5 })} Listo en ${producto.demora}</li>` : ''}
+          <li>${iconos.tejido({ grosor: 1.5 })} Hecho a mano en Villa San Isidro</li>
+          <li>${iconos.whatsapp({ grosor: 1.5 })} Pago y entrega a coordinar por WhatsApp</li>
         </ul>
-        <p class="firma">Silvana ${iconos.corazon(24)}</p>
       </div>
 
       <div class="producto-barra-compra solo-movil">
-        <a class="boton-redondo boton-redondo-grande" href="${consulta}" target="_blank" rel="noopener" aria-label="Preguntame por WhatsApp">${iconos.whatsapp({ tam: 20 })}</a>
+        <a class="boton-redondo boton-redondo-grande" href="${consulta}" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">${iconos.whatsapp({ tam: 20 })}</a>
         <button class="boton boton-agregar" type="button" data-accion="agregar"></button>
       </div>
     </div>`;
@@ -174,10 +169,7 @@ function selectores(producto, conEtiquetas) {
   const titulo = producto.tituloOpciones || 'Medidas';
   return `
     <div class="producto-opciones">
-      <div class="producto-opciones-titulo">
-        <span>${titulo}</span>
-        ${conEtiquetas ? `<span class="producto-opciones-pista">tocá una y te muestro cuál es <svg width="26" height="24" viewBox="0 0 26 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4 C 12 4, 20 9, 21 20"/><path d="M16 15 L21 21 L25 14"/></svg></span>` : ''}
-      </div>
+      <div class="producto-opciones-titulo"><span>${titulo}</span></div>
       <div class="opciones ${conEtiquetas ? 'opciones-con-foto' : ''}">
         ${producto.opciones.map((o, i) => `
           <button class="opcion" type="button" data-opcion="${i}" aria-pressed="false">
@@ -367,7 +359,7 @@ function actualizar({ animar = true } = {}) {
     detalle.textContent = `cada ${producto.venta.precioCada} ${producto.venta.unidad} · ${color.nombre} ${grosor.nombre}`;
   } else if (unitario === null) {
     precio.textContent = 'A consultar';
-    detalle.textContent = 'te paso el precio por WhatsApp';
+    detalle.textContent = 'según el pedido';
   } else {
     const opcion = producto.opciones[estado.opcion];
     precio.textContent = pesos(unitario);

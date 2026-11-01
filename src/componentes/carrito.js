@@ -57,7 +57,7 @@ function textoTotal() {
 
 function mensajeWhatsApp() {
   const nombre = (leerGuardado(CLAVE_NOMBRE, '') || '').trim();
-  const lineas = ['¡Hola Silvana! Quiero hacerte este pedido:', ''];
+  const lineas = ['Hola Silvana, te hago este pedido:', ''];
   if (nombre) lineas.push(`*Nombre:* ${nombre}`, '');
   items.forEach((item, i) => {
     const precio = subtotal(item);
@@ -68,7 +68,7 @@ function mensajeWhatsApp() {
       ''
     );
   });
-  lineas.push(`*TOTAL: ${textoTotal()}*`, '', 'Quedo a la espera de tu respuesta. ¡Gracias!');
+  lineas.push(`*TOTAL: ${textoTotal()}*`, '', '¡Gracias!');
   return lineas.join('\n');
 }
 
@@ -76,10 +76,7 @@ export function iniciarCarrito() {
   dialogo = crear(`
     <dialog class="carrito" aria-labelledby="carrito-titulo">
       <div class="carrito-encabezado">
-        <div>
-          <h2 id="carrito-titulo">Tu pedido</h2>
-          <p class="carrito-bajada">lo terminamos de charlar por WhatsApp</p>
-        </div>
+        <h2 id="carrito-titulo">Tu pedido</h2>
         <button class="boton-redondo" type="button" data-accion="cerrar" aria-label="Cerrar el carrito">${iconos.cerrar()}</button>
       </div>
       <div class="carrito-cuerpo"></div>
@@ -125,9 +122,8 @@ function renderizar() {
   if (!items.length) {
     cuerpo.innerHTML = `
       <div class="carrito-vacio">
-        <p class="carrito-vacio-mano">¡Todavía no elegiste nada!</p>
-        <p>Mirá el catálogo y sumá lo que te guste. Después me mandás el pedido por WhatsApp y lo charlamos.</p>
-        <a class="boton" href="/catalogo">Ver el catálogo ${iconos.flecha()}</a>
+        <p>Tu carrito está vacío.</p>
+        <a class="boton" href="/catalogo">Ver catálogo ${iconos.flecha()}</a>
       </div>`;
     pie.innerHTML = '';
     return;
@@ -159,8 +155,8 @@ function renderizar() {
       }).join('')}
     </ul>
     <label class="carrito-nombre">
-      <span>¿Cómo te llamás?</span>
-      <input name="nombre" type="text" autocomplete="given-name" placeholder="Tu nombre, así sé quién me escribe" value="${nombre.replace(/"/g, '&quot;')}">
+      <span>Tu nombre</span>
+      <input name="nombre" type="text" autocomplete="name" value="${nombre.replace(/"/g, '&quot;')}">
     </label>`;
 
   pie.innerHTML = `

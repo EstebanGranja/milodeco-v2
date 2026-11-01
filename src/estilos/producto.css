@@ -60,7 +60,6 @@
 /* ---------- Galería ---------- */
 
 .galeria { position: relative; flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
-.galeria-washi { right: 40px; top: -12px; width: 112px; height: 30px; transform: rotate(5deg); }
 
 .galeria-principal {
   position: relative;
@@ -83,7 +82,8 @@
   transition: opacity 0.45s ease;
 }
 .galeria-medio.activa { opacity: 1; }
-.galeria-cinta { left: 14px; top: 18px; padding: 7px 16px 7px 28px; font-size: 24px; clip-path: polygon(13px 0, 100% 0, 100% 100%, 13px 100%, 0 50%); }
+.galeria-washi { right: 40px; top: -12px; width: 108px; height: 28px; transform: rotate(5deg); }
+.galeria-cinta { left: 14px; top: 18px; font-size: 23px; }
 
 .galeria-contador {
   position: absolute;
@@ -176,9 +176,6 @@
 /* ---------- Información ---------- */
 
 .producto-info { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; padding: 18px 10px 6px 0; }
-.producto-sobre { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
-.producto-categoria { font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--marron); }
-.producto-frase { font-family: var(--f-mano); font-size: 24px; line-height: 1.1; color: var(--acento); transform: rotate(-3deg); }
 .producto-nombre {
   font-family: var(--f-titulo);
   font-weight: 300;
@@ -193,7 +190,7 @@
 .producto-precio-detalle { font-size: 14px; color: var(--marron); }
 .producto-descripcion { font-size: 16px; line-height: 1.7; color: var(--texto-suave); margin-top: 18px; }
 
-.producto-opciones { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--linea-suave); }
+.producto-opciones { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--linea); }
 .producto-opciones-titulo {
   display: flex;
   align-items: baseline;
@@ -203,16 +200,6 @@
   font-weight: 600;
 }
 .producto-opciones-titulo:not(:first-child) { margin-top: 18px; }
-.producto-opciones-pista {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--f-mano);
-  font-size: 23px;
-  font-weight: 400;
-  color: var(--acento);
-  transform: rotate(-2deg);
-}
 .pastillas-opciones { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .producto-nota-venta { font-size: 13px; color: var(--marron); margin-top: 14px; }
 
@@ -268,7 +255,7 @@
   list-style: none;
   margin: 24px 0 0;
   padding: 20px 0 0;
-  border-top: 1px solid var(--linea-suave);
+  border-top: 1px solid var(--linea);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -311,7 +298,7 @@
     background: rgba(255, 252, 247, 0.96);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    border-bottom: 1px dashed var(--linea);
+    border-bottom: 1px solid var(--linea);
   }
   .producto-volver {
     height: 44px;
@@ -324,14 +311,14 @@
     font-size: 15px;
     font-weight: 500;
   }
-  .producto-barra-firma { font-family: var(--f-mano); font-size: 20px; color: var(--acento); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .producto-barra-firma { font-family: var(--f-mano); font-size: 19px; color: var(--acento); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .boton-carrito-claro { width: 44px; padding: 0; justify-content: center; background: transparent; color: var(--tinta); border: 1px solid rgba(58, 43, 32, 0.2); }
   .boton-carrito-claro .burbuja { position: absolute; top: -2px; right: -2px; min-width: 19px; height: 19px; padding: 0 5px; font-size: 11px; background: var(--tinta); color: var(--crema); }
 
   .galeria { flex: none; padding: 18px 16px 0; gap: 12px; }
-  .galeria-washi { right: 34px; top: 6px; width: 90px; height: 26px; }
   .galeria-principal { min-height: 0; max-height: 72dvh; border-radius: 22px; }
-  .galeria-cinta { left: 12px; top: 16px; padding: 5px 13px 5px 24px; font-size: 21px; clip-path: polygon(11px 0, 100% 0, 100% 100%, 11px 100%, 0 50%); }
+  .galeria-washi { right: 34px; top: 6px; width: 86px; height: 24px; }
+  .galeria-cinta { left: 12px; top: 14px; font-size: 20px; }
   .galeria-contador { top: auto; bottom: 16px; right: 12px; font-size: 12px; padding: 6px 10px; }
   .galeria-flecha { width: 44px; height: 44px; }
   .galeria-anterior { left: 10px; }
@@ -341,17 +328,13 @@
   .miniatura { border-radius: 10px; }
 
   .producto-info { flex: none; padding: 24px 20px 0; }
-  .producto-categoria { font-size: 11px; letter-spacing: 0.2em; }
-  .producto-frase { font-size: 21px; }
   .producto-nombre { font-size: 38px; line-height: 1.03; margin: 10px 0 0; }
   .producto-precio { margin-top: 12px; gap: 4px 10px; }
   .producto-precio-valor { font-size: 30px; }
   .producto-precio-detalle { font-size: 13px; }
   .producto-descripcion { font-size: 15px; margin-top: 14px; }
 
-  .producto-opciones { margin-top: 24px; padding-top: 18px; border-top: 1px dashed var(--linea); }
-  .producto-opciones-pista { font-size: 21px; }
-  .producto-opciones-pista svg { display: none; }
+  .producto-opciones { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--linea); }
   .opciones, .opciones-con-foto { grid-template-columns: 1fr; margin-top: 12px; }
   .opcion, .opciones-con-foto .opcion { flex-direction: row; align-items: center; padding: 9px 12px 9px 12px; gap: 12px; }
   .opcion:not(:has(img)) { padding: 14px 12px 14px 16px; }
@@ -373,8 +356,8 @@
   .producto-cantidad-titulo { font-size: 15px; font-weight: 600; }
   .producto-cantidad-fila .cantidad { height: 52px; padding: 0 4px; }
 
-  .producto-datos { padding-top: 18px; border-top: 1px dashed var(--linea); }
-  .producto-info .firma { margin: 18px 0 28px; font-size: 27px; }
+  .producto-datos { padding-top: 18px; border-top: 1px solid var(--linea); }
+  .producto-datos { margin-bottom: 28px; }
 
   /* Barra fija abajo con WhatsApp y "Agregar al carrito" */
   .producto-barra-compra {
@@ -387,7 +370,7 @@
     gap: 10px;
     padding: 12px 16px calc(14px + env(safe-area-inset-bottom));
     background: var(--papel);
-    border-top: 1px solid var(--linea-suave);
+    border-top: 1px solid var(--linea);
     box-shadow: 0 -12px 30px -20px rgba(43, 33, 26, 0.45);
   }
   .producto-barra-compra .boton-agregar { flex: 1; height: 52px; font-size: 15px; letter-spacing: 0.02em; }

@@ -18,19 +18,14 @@ export const iconos = {
   reloj: (o) => svg('<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>', o),
   tejido: (o) => svg('<path d="M7 12c2.5-3 7.5-3 10 0M7 16c2.5-3 7.5-3 10 0M7 8c2.5-3 7.5-3 10 0"/>', o),
   play: (o) => svg('<path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/>', o),
+  ampliar: (o) => svg('<path d="M14 4h6v6"/><path d="M20 4l-7 7"/><path d="M10 20H4v-6"/><path d="M4 20l7-7"/>', o),
   basura: (o) => svg('<path d="M4.5 7h15"/><path d="M9.5 7V5h5v2"/><path d="M6.5 7l.8 12a1.5 1.5 0 0 0 1.5 1.4h6.4a1.5 1.5 0 0 0 1.5-1.4l.8-12"/>', o),
 
-  // Trazos "a mano" de las notitas de Silvana
-  corazon: (tam = 30, color = 'currentColor') =>
-    `<svg width="${tam}" height="${Math.round(tam * 0.88)}" viewBox="0 0 34 30" fill="none" stroke="${color}" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 26s-11-6.5-11-14.5A6 6 0 0 1 17 8a6 6 0 0 1 11 3.5C28 19.5 17 26 17 26z"/></svg>`,
-  tilde: (tam = 22) =>
-    `<svg width="${tam}" height="${tam}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12.5c2 1.5 3.5 3.3 5 5.5 3-6 7-10.5 12-14"/></svg>`,
-  flechaMano: (tam = 40) =>
-    `<svg width="${tam}" height="${Math.round(tam * 0.85)}" viewBox="0 0 40 34" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 C 18 4, 30 12, 32 28"/><path d="M25 22 L32 29 L37 20"/></svg>`,
+  // Trazos "a mano"
+  corazon: (tam = 30) =>
+    `<svg width="${tam}" height="${Math.round(tam * 0.88)}" viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 26s-11-6.5-11-14.5A6 6 0 0 1 17 8a6 6 0 0 1 11 3.5C28 19.5 17 26 17 26z"/></svg>`,
   subrayado: () =>
-    `<svg class="subrayado" aria-hidden="true" viewBox="0 0 300 16" preserveAspectRatio="none"><path d="M3 10 C 60 3, 120 14, 180 7 S 270 4, 297 9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`,
-  estrella: (tam = 16) =>
-    `<svg width="${tam}" height="${tam}" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0 L9 7 L16 8 L9 9 L8 16 L7 9 L0 8 L7 7 Z" fill="currentColor"/></svg>`
+    `<svg class="subrayado" aria-hidden="true" viewBox="0 0 300 16" preserveAspectRatio="none"><path d="M3 10 C 60 3, 120 14, 180 7 S 270 4, 297 9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`
 };
 
 // Puntada: la línea cosida que separa secciones

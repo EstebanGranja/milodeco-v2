@@ -10,7 +10,7 @@
 .tarjeta-foto {
   position: relative;
   aspect-ratio: 4 / 5;
-  border-radius: 22px;
+  border-radius: 20px;
   overflow: hidden;
   background: var(--arena);
 }
@@ -59,7 +59,7 @@
   gap: 12px;
   margin-top: 14px;
   padding-top: 14px;
-  border-top: 1px dashed rgba(58, 43, 32, 0.25);
+  border-top: 1px solid var(--linea);
 }
 .tarjeta-precio { font-size: 21px; font-weight: 600; color: var(--acento); white-space: nowrap; }
 .tarjeta-desde { font-size: 13px; font-weight: 400; color: var(--marron); margin-right: 6px; }
@@ -68,7 +68,7 @@
 @media (max-width: 760px) {
   .grilla-productos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
   .tarjeta-foto { border-radius: 16px; }
-  .tarjeta-foto .cinta { left: 8px; top: 10px; padding: 3px 10px 3px 20px; font-size: 19px; clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0 50%); }
+  .tarjeta-foto .cinta { left: 8px; top: 10px; padding: 3px 10px 3px 20px; font-size: 18px; clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0 50%); }
   .tarjeta-ver { display: none; }
   .tarjeta-nombre { font-size: 18px; margin-top: 11px; }
   .tarjeta-resumen { display: none; }

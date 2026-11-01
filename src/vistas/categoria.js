@@ -15,14 +15,10 @@ export function vistaCategoria(categoria) {
     ? categoria.productos.map((producto) => ({ categoria, producto }))
     : todosLosProductos();
   const titulo = categoria ? categoria.nombre : 'Catálogo';
-  const subtitulo = categoria ? categoria.subtitulo : 'todo lo que hago';
-  const descripcion = categoria
-    ? categoria.descripcion
-    : 'Todas mis piezas juntas. Tocá la que te guste para ver medidas, opciones y precios.';
+  const descripcion = categoria ? categoria.descripcion : 'Todas las piezas, en un solo lugar.';
 
   // Tres fotos en arco al lado del título: el primer producto va en el medio, más grande
   const arcos = [items[1], items[0], items[2]].filter(Boolean).map(({ producto }) => portadaDe(producto));
-  const notaArcos = items[0]?.producto.nota;
 
   const pastilla = (href, nombre, cantidad, activa) =>
     `<a class="pastilla" href="${href}" ${activa ? 'aria-current="page"' : ''}>${nombre} <span class="pastilla-cantidad">${cantidad}</span></a>`;
@@ -35,16 +31,11 @@ export function vistaCategoria(categoria) {
         </nav>
         <div class="categoria-intro">
           <div class="categoria-intro-texto">
-            <div class="categoria-titulo">
-              <h1>${titulo}</h1>
-              <span class="categoria-subtitulo">${subtitulo}</span>
-            </div>
+            <h1 class="categoria-titulo">${titulo}</h1>
             <p class="categoria-descripcion">${descripcion}</p>
           </div>
           <div class="arcos" aria-hidden="true">
             ${arcos.map((src) => `<span class="arco"><img src="${src}" alt=""></span>`).join('')}
-            ${notaArcos ? `<span class="arcos-nota">${notaArcos}</span>
-              <svg class="arcos-flecha" width="34" height="30" viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4 C 16 6, 26 12, 28 26"/><path d="M22 20 L28 27 L32 19"/></svg>` : ''}
           </div>
         </div>
 
@@ -70,14 +61,13 @@ export function vistaCategoria(categoria) {
       </section>
 
       <section class="contenedor categoria-ayuda">
-        <div class="nota-papel nota-papel-ancha">
-          <span class="washi washi-blanca" style="left: 60px; top: -13px; transform: rotate(-3deg)" aria-hidden="true"></span>
-          <span class="washi washi-blanca" style="right: 70px; bottom: -13px; transform: rotate(4deg)" aria-hidden="true"></span>
+        <div class="ayuda">
+          <span class="washi washi-blanca" aria-hidden="true"></span>
           <div>
-            <p class="nota-papel-titulo">¿Tenés dudas? Preguntame lo que quieras</p>
-            <p>Te cuento medidas, colores y cuánto tarda cada pieza. Y si tenés una idea para tu casa, también la charlamos.</p>
+            <h2 class="ayuda-titulo">¿Dudas con una medida o un color?</h2>
+            <p>Escribime y lo vemos.</p>
           </div>
-          <a class="boton" href="${linkWhatsApp()}" target="_blank" rel="noopener">${iconos.whatsapp()} Escribime por WhatsApp</a>
+          <a class="boton" href="${linkWhatsApp()}" target="_blank" rel="noopener">${iconos.whatsapp()} Consultar por WhatsApp</a>
         </div>
       </section>
     </div>`);

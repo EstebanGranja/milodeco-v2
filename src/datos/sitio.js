@@ -10,13 +10,12 @@ export const sitio = {
 
   // Barra de arriba de todo. Poner en null para ocultarla.
   anuncio: {
-    texto: '¡Llegaron mis arbolitos de Navidad!',
-    textoCorto: '¡Llegaron mis arbolitos!',
-    link: '/deco/arbolitos-de-navidad',
-    accion: 'Pasá a verlos'
+    texto: 'Arbolitos de Navidad 2026',
+    accion: 'Ver modelos',
+    link: '/deco/arbolitos-de-navidad'
   },
 
-  // "Algunas de mis preferidas" en el inicio: categoría + slug del producto
+  // "Lo más pedido" en el inicio: categoría + slug del producto
   destacados: [
     ['deco', 'arbolitos-de-navidad'],
     ['espejos', 'espejo-trenza'],
@@ -26,12 +25,12 @@ export const sitio = {
 
   // Bloque oscuro de temporada en el inicio. Poner en null para ocultarlo.
   temporada: {
-    frase: '¡llegó la Navidad al taller!',
-    titulo: 'Mis arbolitos para armar tu',
+    antetitulo: 'Navidad 2026',
+    titulo: 'Arbolitos para armar tu',
     tituloResaltado: 'bosquecito',
-    texto: 'Este año hice cinco modelos nuevos, tejidos en papel kraft, de 30 a 68 cm. Combinalos como más te guste y llená tu casa de una Navidad cálida y natural.',
-    chips: ['3 chicos · 30 cm · $40.000', '2 grandes · 45 y 68 cm · $59.000'],
-    boton: 'Ver los arbolitos',
+    texto: 'Cinco modelos tejidos en papel kraft, de 30 a 68 cm.',
+    chips: ['Chico: $40.000', 'Grande: $59.000'],
+    boton: 'Ver arbolitos',
     link: '/deco/arbolitos-de-navidad',
     imagen: '/img/deco_21.webp',
     imagenAlt: 'Los cinco arbolitos de Navidad juntos sobre una mesa en el jardín',

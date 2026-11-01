@@ -19,6 +19,11 @@ export function esVideo(src) {
   return /\.(mp4|webm|ogg)$/i.test(src);
 }
 
+// Cada video tiene al lado su imagen de portada: /videos/x.mp4 → /videos/x.jpg
+export function posterDe(src) {
+  return src.replace(/\.(mp4|webm|ogg)$/i, '.jpg');
+}
+
 // Primera foto del producto (los videos no sirven de portada)
 export function portadaDe(producto) {
   return producto.imagenes.find((src) => !esVideo(src));

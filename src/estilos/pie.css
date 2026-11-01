@@ -4,27 +4,25 @@
 
 .pie-columnas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 40px;
-  padding-top: 72px;
+  padding-top: 64px;
 }
-.pie-saludo { display: flex; flex-direction: column; gap: 14px; }
-.pie-saludo p:not([class]) { font-size: 15px; line-height: 1.65; color: rgba(239, 228, 210, 0.75); max-width: 280px; }
+.pie-marca { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.pie-marca img { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; }
 .pie-gracias {
   font-family: var(--f-mano);
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1;
   color: var(--dorado);
+  margin-top: 10px;
   transform: rotate(-3deg);
   transform-origin: left;
 }
-.pie-firma { font-family: var(--f-mano); font-size: 28px; color: var(--crema); }
+.pie-marca p:not([class]) { font-size: 15px; line-height: 1.6; color: rgba(239, 228, 210, 0.7); max-width: 280px; }
 
 .pie-lista { display: flex; flex-direction: column; gap: 12px; font-size: 15px; }
 .pie-titulo { font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dorado); margin-bottom: 4px; }
-
-.pie-logo { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; font-size: 14px; color: rgba(239, 228, 210, 0.7); }
-.pie-logo img { width: 84px; height: 84px; border-radius: 18px; object-fit: cover; transform: rotate(4deg); }
 
 .pie-legal {
   display: flex;
@@ -33,16 +31,16 @@
   gap: 12px;
   margin-top: 56px;
   padding-block: 22px 28px;
-  border-top: 1px dashed rgba(239, 228, 210, 0.22);
+  /* línea arriba, del mismo ancho que el contenido */
+  background: linear-gradient(rgba(239, 228, 210, 0.15), rgba(239, 228, 210, 0.15)) center top / calc(100% - 2 * var(--margen)) 1px no-repeat;
   font-size: 13px;
-  color: rgba(239, 228, 210, 0.6);
+  color: rgba(239, 228, 210, 0.55);
 }
 
 @media (max-width: 760px) {
-  .pie-columnas { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
-  .pie-gracias { font-size: 36px; }
+  .pie-columnas { grid-template-columns: 1fr 1fr; gap: 32px 20px; padding-top: 44px; }
+  .pie-marca { grid-column: 1 / -1; }
   .pie-lista { gap: 0; }
-  .pie-lista a { padding: 10px 0; }
-  .pie-logo { display: none; }
-  .pie-legal { margin-top: 28px; padding-block: 16px 32px; font-size: 12px; }
+  .pie-lista a { padding: 8px 0; }
+  .pie-legal { margin-top: 32px; padding-block: 16px 32px; font-size: 12px; }
 }

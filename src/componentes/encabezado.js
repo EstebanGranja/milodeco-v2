@@ -16,13 +16,12 @@ export function crearEncabezado() {
   plantilla.innerHTML = `
     ${sitio.anuncio ? `
       <a class="anuncio" href="${sitio.anuncio.link}">
-        <span class="anuncio-mano"><span class="solo-escritorio">${sitio.anuncio.texto}</span><span class="solo-movil">${sitio.anuncio.textoCorto}</span></span>
-        <span class="anuncio-accion">${sitio.anuncio.accion} →</span>
+        ${sitio.anuncio.texto} <span aria-hidden="true">·</span> <span class="anuncio-accion">${sitio.anuncio.accion}</span>
       </a>` : ''}
     <header class="encabezado">
       <div class="encabezado-contenido contenedor">
         <a class="marca" href="/" aria-label="Milodeco, ir al inicio">
-          <img src="/img/logo.webp" alt="" width="48" height="48">
+          <img src="/img/logo.webp" alt="" width="44" height="44">
           <span class="marca-texto" aria-hidden="true">
             <span class="marca-nombre">Milodeco</span>
             <span class="marca-firma">hecho a mano por Silvana</span>

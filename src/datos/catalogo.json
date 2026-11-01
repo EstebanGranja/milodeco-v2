@@ -3,8 +3,7 @@
     {
       "id": "espejos",
       "nombre": "Espejos",
-      "subtitulo": "reflejos tejidos a mano",
-      "descripcion": "Espejos redondos con marcos de hierro forjado y papel kraft tejido a mano. Cada uno tiene su personalidad: elegí el que mejor hable con tu casa.",
+      "descripcion": "Espejos redondos con marco de hierro forjado y papel kraft tejido a mano.",
       "portada": "/img/espejo_11.webp",
       "portadaPosicion": "center 45%",
       "productos": [
@@ -83,8 +82,7 @@
     {
       "id": "lamparas",
       "nombre": "Lámparas",
-      "subtitulo": "luz cálida para tu casa",
-      "descripcion": "Lámparas colgantes y capelinas de hierro y papel kraft que llenan cada ambiente de una luz cálida y tranquila.",
+      "descripcion": "Lámparas colgantes y capelinas de hierro y papel kraft.",
       "portada": "/img/lampara_31.webp",
       "portadaPosicion": "center 55%",
       "productos": [
@@ -161,8 +159,7 @@
     {
       "id": "deco",
       "nombre": "Deco",
-      "subtitulo": "cositas para tu casa",
-      "descripcion": "Acá están las cositas para la casa que tejo a mano sobre estructuras de hierro: bandejas, canastos, percheros, bodegas y mis nuevos arbolitos de Navidad.",
+      "descripcion": "Bandejas, canastos, percheros, bodegas y arbolitos de Navidad, tejidos sobre hierro.",
       "portada": "/img/deco_21.webp",
       "portadaPosicion": "center 62%",
       "nota": "¡hay Navidad!",
@@ -171,10 +168,9 @@
           "slug": "arbolitos-de-navidad",
           "nombre": "Arbolitos de Navidad",
           "nota": "¡nuevos!",
-          "notaGaleria": "¡los más pedidos!",
-          "frase": "¡recién salidos del taller!",
           "descripcion": "¡Los más pedidos de cada Navidad! Arbolitos tejidos a mano en papel kraft sobre estructura de hierro, con ese toque cálido y natural que transforma cualquier rincón. Elegí tu favorito o combiná varios y armá tu propio bosquecito navideño.",
-          "imagenes": ["/img/deco_21.webp", "/img/deco_22.webp", "/img/deco_23.webp", "/img/deco_24.webp", "/img/deco_25.webp", "/img/deco_26.webp"],
+          "imagenes": ["/img/deco_21.webp", "/img/deco_22.webp", "/img/deco_23.webp", "/img/deco_24.webp", "/img/deco_25.webp", "/img/deco_26.webp", "/videos/arbolitos-luces.mp4"],
+          "etiquetasFotos": { "/videos/arbolitos-luces.mp4": "Todas, con luces" },
           "tituloOpciones": "Opciones",
           "opciones": [
             { "nombre": "Opción 1", "detalle": "Chico · 30 cm", "etiqueta": "Opción 1 (chico)", "imagen": "/img/deco_22.webp", "precio": 40000 },
@@ -333,8 +329,7 @@
     {
       "id": "bancos",
       "nombre": "Bancos",
-      "subtitulo": "para sentarse y apoyar",
-      "descripcion": "Banquitos y pies de cama de madera de pino y de hierro forjado, firmes y hechos a mano.",
+      "descripcion": "Banquitos y pies de cama de madera de pino y de hierro forjado.",
       "portada": "/img/banco_21.jpeg",
       "portadaPosicion": "center 62%",
       "productos": [
@@ -384,11 +379,10 @@
     {
       "id": "insumos",
       "nombre": "Insumos",
-      "subtitulo": "para que tejas vos",
-      "descripcion": "Papel kraft y estructuras de hierro para que armes tus propias piezas. Son los mismos materiales que uso yo en el taller.",
+      "descripcion": "Papel kraft y estructuras de hierro para tejer tus propias piezas.",
       "portada": "/img/insumo_portada.webp",
       "portadaPosicion": "center 40%",
-      "cantidadTexto": "para tejer vos",
+      "cantidadTexto": "2 productos",
       "productos": [
         {
           "slug": "papel-kraft",

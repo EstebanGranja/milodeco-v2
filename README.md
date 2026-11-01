@@ -62,8 +62,7 @@ Todo está en `src/datos/catalogo.json`. Cada producto:
 
 Campos opcionales:
 
-- `nota`: cartelito sobre la foto (`"¡nuevos!"`). `notaGaleria` lo cambia solo dentro de la ficha.
-- `frase`: texto a mano al lado de la categoría en la ficha.
+- `nota`: cartelito kraft escrito a mano sobre la foto (`"¡nuevos!"`, `"¡a tu medida!"`). Corto, de 2 o 3 palabras.
 - `tituloOpciones`: `"Opciones"` en lugar de `"Medidas"`.
 - En cada opción, `detalle` (segunda línea) e `imagen`: si la opción tiene imagen, elegirla muestra esa foto y pasar las fotos elige la opción (así funcionan los arbolitos). `etiqueta` es el texto del cartelito de la foto.
 - `"opciones": []` deja el producto "a consultar".
