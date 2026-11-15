@@ -30,7 +30,7 @@
           "nombre": "Estrella en 3D",
           "nota": "¡nueva!",
           "descripcion": "Con el nacimiento en el centro. Una estrella para colgar, de hierro tejido a mano en papel kraft, con un nacimiento de madera que cuelga en el medio. Hay dos tamaños: combinalas y armá tu rincón navideño en una pared, una puerta o una ventana.",
-          "imagenes": ["/img/navidad_11.webp"],
+          "imagenes": ["/img/navidad_11.webp", "/videos/estrella-3d-luces.mp4"],
           "opciones": [
             { "nombre": "Chica · 28 cm", "precio": 36000 },
             { "nombre": "Grande · 38 cm", "precio": 40000 }
