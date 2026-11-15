@@ -10,14 +10,14 @@ export const sitio = {
 
   // Barra de arriba de todo. Poner en null para ocultarla.
   anuncio: {
-    texto: 'Arbolitos de Navidad 2026',
-    accion: 'Ver modelos',
-    link: '/deco/arbolitos-de-navidad'
+    texto: 'Navidad 2026: arbolitos y estrellas',
+    accion: 'Ver todo',
+    link: '/navidad'
   },
 
   // "Lo más pedido" en el inicio: categoría + slug del producto
   destacados: [
-    ['deco', 'arbolitos-de-navidad'],
+    ['navidad', 'arbolitos-de-navidad'],
     ['espejos', 'espejo-trenza'],
     ['lamparas', 'lampara-pampa'],
     ['espejos', 'espejo-girasol']
@@ -31,7 +31,7 @@ export const sitio = {
     texto: 'Cinco modelos tejidos en papel kraft, de 30 a 68 cm.',
     chips: ['Chico: $40.000', 'Grande: $59.000'],
     boton: 'Ver arbolitos',
-    link: '/deco/arbolitos-de-navidad',
+    link: '/navidad/arbolitos-de-navidad',
     imagen: '/img/deco_21.webp',
     imagenAlt: 'Los cinco arbolitos de Navidad juntos sobre una mesa en el jardín',
     epigrafe: 'la familia completa'

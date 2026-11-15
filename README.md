@@ -24,7 +24,7 @@ public/
   videos/                  video de la Lámpara Geo y de Silvana en el taller
 src/
   main.js                  arranque: arma la página según la ruta
-  router.js                rutas sin recargar: /, /catalogo, /deco, /deco/arbolitos-de-navidad
+  router.js                rutas sin recargar: /, /catalogo, /navidad, /navidad/arbolitos-de-navidad
   util.js                  precios, link de WhatsApp, localStorage
   datos/
     catalogo.json          categorías, productos, opciones y precios  ← lo que más se edita
@@ -68,7 +68,9 @@ Campos opcionales:
 - `"opciones": []` deja el producto "a consultar".
 - Papel Kraft usa `colores` → `grosores` y `venta` (metros mínimos, de a cuánto, precio cada 100 m).
 
-Las fotos van en `public/img/` y se nombran como en el v1 (`categoria_productoFoto.webp`).
+Las fotos van en `public/img/` y se nombran como en el v1 (`categoria_productoFoto.webp`). Los arbolitos conservan sus nombres `deco_2x` de cuando estaban en Deco.
+
+Si un producto cambia de categoría, los links viejos siguen andando: el router lo busca por su slug y corrige la URL (así pasó con `/deco/arbolitos-de-navidad` → `/navidad/arbolitos-de-navidad`).
 
 ## Deploy
 

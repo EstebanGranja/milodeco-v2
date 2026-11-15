@@ -1,10 +1,10 @@
-import { buscarCategoria, buscarProducto } from './datos/catalogo.js';
+import { buscarCategoria, buscarProducto, todosLosProductos, urlProducto } from './datos/catalogo.js';
 
 // Rutas del sitio:
 //   /                       inicio
 //   /catalogo               todos los productos
-//   /deco                   una categoría
-//   /deco/arbolitos-de-navidad   un producto (se abre sobre la página en la que estabas)
+//   /navidad                una categoría
+//   /navidad/arbolitos-de-navidad   un producto (se abre sobre la página en la que estabas)
 
 export function leerRuta(ruta = location.pathname) {
   const [primero, segundo, ...resto] = decodeURI(ruta).split('/').filter(Boolean);
@@ -16,7 +16,11 @@ export function leerRuta(ruta = location.pathname) {
   if (!segundo) return { vista: 'categoria', categoria };
 
   const producto = buscarProducto(categoria, segundo);
-  return producto ? { vista: 'producto', categoria, producto } : { vista: 'no-encontrada' };
+  if (producto) return { vista: 'producto', categoria, producto };
+
+  // Producto que cambió de categoría (los arbolitos estaban en /deco): links viejos y carritos guardados
+  const mudado = todosLosProductos().find((i) => i.producto.slug === segundo);
+  return mudado ? { vista: 'mudado', url: urlProducto(mudado.categoria, mudado.producto) } : { vista: 'no-encontrada' };
 }
 
 let pintar = () => {};

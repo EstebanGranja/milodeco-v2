@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Todas las rutas (/deco, /deco/arbolitos-de-navidad...) las resuelve la app
+# Todas las rutas (/navidad, /navidad/arbolitos-de-navidad...) las resuelve la app
 [[redirects]]
   from = "/*"
   to = "/index.html"

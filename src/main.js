@@ -55,6 +55,11 @@ function tituloDe(ruta) {
 function render({ porHistorial = false }) {
   cerrarCarrito();
   const ruta = leerRuta();
+  if (ruta.vista === 'mudado') {
+    // Se corrige la URL sin sumar un paso al historial y se pinta la ruta nueva
+    history.replaceState(history.state, '', ruta.url + location.hash);
+    return render({ porHistorial });
+  }
   document.title = tituloDe(ruta);
 
   if (ruta.vista === 'producto') {

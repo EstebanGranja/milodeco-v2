@@ -1,6 +1,56 @@
 {
   "categorias": [
     {
+      "id": "navidad",
+      "nombre": "Navidad",
+      "descripcion": "Arbolitos y estrellas tejidos a mano en papel kraft sobre hierro, para armar tu rincón navideño.",
+      "portada": "/img/deco_21.webp",
+      "portadaPosicion": "center 62%",
+      "nota": "¡nuevas estrellas!",
+      "productos": [
+        {
+          "slug": "arbolitos-de-navidad",
+          "nombre": "Arbolitos de Navidad",
+          "nota": "¡nuevos!",
+          "descripcion": "¡Los más pedidos de cada Navidad! Arbolitos tejidos a mano en papel kraft sobre estructura de hierro, con ese toque cálido y natural que transforma cualquier rincón. Elegí tu favorito o combiná varios y armá tu propio bosquecito navideño.",
+          "imagenes": ["/img/deco_21.webp", "/img/deco_22.webp", "/img/deco_23.webp", "/img/deco_24.webp", "/img/deco_27.webp", "/img/deco_28.webp", "/videos/arbolitos-luces.mp4"],
+          "etiquetasFotos": { "/videos/arbolitos-luces.mp4": "Todas, con luces" },
+          "tituloOpciones": "Opciones",
+          "opciones": [
+            { "nombre": "Opción 1", "detalle": "Chico · 30 cm", "etiqueta": "Opción 1 (chico)", "imagen": "/img/deco_22.webp", "precio": 40000 },
+            { "nombre": "Opción 2", "detalle": "Chico · 30 cm", "etiqueta": "Opción 2 (chico)", "imagen": "/img/deco_23.webp", "precio": 40000 },
+            { "nombre": "Opción 3", "detalle": "Chico · 30 cm", "etiqueta": "Opción 3 (chico)", "imagen": "/img/deco_24.webp", "precio": 40000 },
+            { "nombre": "Opción 4", "detalle": "Grande · 45 cm", "etiqueta": "Opción 4 (grande)", "imagen": "/img/deco_27.webp", "precio": 59000 },
+            { "nombre": "Opción 5", "detalle": "Grande · 68 cm", "etiqueta": "Opción 5 (grande)", "imagen": "/img/deco_28.webp", "precio": 59000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "estrella-en-3d",
+          "nombre": "Estrella en 3D",
+          "nota": "¡nueva!",
+          "descripcion": "Con el nacimiento en el centro. Una estrella para colgar, de hierro tejido a mano en papel kraft, con un nacimiento de madera que cuelga en el medio. Hay dos tamaños: combinalas y armá tu rincón navideño en una pared, una puerta o una ventana.",
+          "imagenes": ["/img/navidad_11.webp"],
+          "opciones": [
+            { "nombre": "Chica · 28 cm", "precio": 36000 },
+            { "nombre": "Grande · 38 cm", "precio": 40000 }
+          ],
+          "demora": "10 a 15 días"
+        },
+        {
+          "slug": "estrella-con-cairel",
+          "nombre": "Estrella con Cairel",
+          "nota": "¡nueva!",
+          "descripcion": "Con un cairel de cristal en el centro. Una estrella colgante de hierro tejido a mano que juega con la luz. Colgala en una ventana, en el arbolito o donde quieras sumarle brillo a la Navidad.",
+          "imagenes": ["/img/navidad_21.webp"],
+          "opciones": [
+            { "nombre": "Medida única", "precio": 12000 }
+          ],
+          "demora": "10 a 15 días"
+        }
+      ]
+    },
+    {
       "id": "espejos",
       "nombre": "Espejos",
       "descripcion": "Espejos redondos con marco de hierro forjado y papel kraft tejido a mano.",
@@ -159,28 +209,10 @@
     {
       "id": "deco",
       "nombre": "Deco",
-      "descripcion": "Bandejas, canastos, percheros, bodegas y arbolitos de Navidad, tejidos sobre hierro.",
-      "portada": "/img/deco_21.webp",
-      "portadaPosicion": "center 62%",
-      "nota": "¡hay Navidad!",
+      "descripcion": "Bandejas, canastos, percheros, bodegas y más, tejidos sobre hierro.",
+      "portada": "/img/deco_31.webp",
+      "portadaPosicion": "center 60%",
       "productos": [
-        {
-          "slug": "arbolitos-de-navidad",
-          "nombre": "Arbolitos de Navidad",
-          "nota": "¡nuevos!",
-          "descripcion": "¡Los más pedidos de cada Navidad! Arbolitos tejidos a mano en papel kraft sobre estructura de hierro, con ese toque cálido y natural que transforma cualquier rincón. Elegí tu favorito o combiná varios y armá tu propio bosquecito navideño.",
-          "imagenes": ["/img/deco_21.webp", "/img/deco_22.webp", "/img/deco_23.webp", "/img/deco_24.webp", "/img/deco_27.webp", "/img/deco_28.webp", "/videos/arbolitos-luces.mp4"],
-          "etiquetasFotos": { "/videos/arbolitos-luces.mp4": "Todas, con luces" },
-          "tituloOpciones": "Opciones",
-          "opciones": [
-            { "nombre": "Opción 1", "detalle": "Chico · 30 cm", "etiqueta": "Opción 1 (chico)", "imagen": "/img/deco_22.webp", "precio": 40000 },
-            { "nombre": "Opción 2", "detalle": "Chico · 30 cm", "etiqueta": "Opción 2 (chico)", "imagen": "/img/deco_23.webp", "precio": 40000 },
-            { "nombre": "Opción 3", "detalle": "Chico · 30 cm", "etiqueta": "Opción 3 (chico)", "imagen": "/img/deco_24.webp", "precio": 40000 },
-            { "nombre": "Opción 4", "detalle": "Grande · 45 cm", "etiqueta": "Opción 4 (grande)", "imagen": "/img/deco_27.webp", "precio": 59000 },
-            { "nombre": "Opción 5", "detalle": "Grande · 68 cm", "etiqueta": "Opción 5 (grande)", "imagen": "/img/deco_28.webp", "precio": 59000 }
-          ],
-          "demora": "10 a 15 días"
-        },
         {
           "slug": "mesa-nordica",
           "nombre": "Mesa Nórdica",
