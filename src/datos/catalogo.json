@@ -32,8 +32,8 @@
           "descripcion": "Con el nacimiento en el centro. Una estrella para colgar, de hierro tejido a mano en papel kraft, con un nacimiento de madera que cuelga en el medio. Hay dos tamaños: combinalas y armá tu rincón navideño en una pared, una puerta o una ventana.",
           "imagenes": ["/img/navidad_11.webp", "/videos/estrella-3d-luces.mp4"],
           "opciones": [
-            { "nombre": "Chica · 28 cm", "precio": 36000 },
-            { "nombre": "Grande · 38 cm", "precio": 40000 }
+            { "nombre": "Chica · 28 cm", "precio": 40000 },
+            { "nombre": "Grande · 38 cm", "precio": 43000 }
           ],
           "demora": "10 a 15 días"
         },
@@ -44,7 +44,7 @@
           "descripcion": "Con un cairel de cristal en el centro. Una estrella colgante de hierro tejido a mano que juega con la luz. Colgala en una ventana, en el arbolito o donde quieras sumarle brillo a la Navidad.",
           "imagenes": ["/img/navidad_21.webp"],
           "opciones": [
-            { "nombre": "Medida única", "precio": 12000 }
+            { "nombre": "Medida única", "precio": 15000 }
           ],
           "demora": "10 a 15 días"
         }
