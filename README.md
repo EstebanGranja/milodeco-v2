@@ -18,7 +18,9 @@ npm run preview  # sirve dist/ para probar el build
 
 ```
 index.html                 cascarón: encabezado, <main id="app"> y pie
-netlify.toml               build, redirección de rutas a index.html y cache de fotos
+vite.config.js             arma robots.txt y sitemap.xml desde el catálogo en cada build
+netlify.toml               build, redirección de rutas a index.html y cache de fotos (Netlify, en desuso)
+public/_headers            cache de fotos y videos en Cloudflare
 public/
   img/                     fotos de productos (copiadas del v1) + logo
   videos/                  video de la Lámpara Geo y de Silvana en el taller
